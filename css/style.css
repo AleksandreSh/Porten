@@ -3,18 +3,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet');
 
-html, body{
+*,*:before,*:after{
+    padding: 0;
     margin: 0;
-    padding-left: 0;
+    border: 0;
+    box-sizing: border-box;
+}   
+
+html, body{
     overflow-x: hidden;
     width: 100%;
     height: 100%;
-    background: black;
+    background-color: #0F0F0F;
 }
 
-*,*:before,*:after{
-	box-sizing: border-box;
-}
+
 
 .header__burger{
     display: none;
@@ -62,7 +65,7 @@ html, body{
       
 .header_top-left li:nth-child(1)::before{
     position: absolute;
-    content: url(/img/telephone.png);
+    content: url(/img/fon1.png);
     top: 0;
     padding-left : 0px;
     left: 40px ;
@@ -84,7 +87,7 @@ html, body{
   
 .header_top-right li:nth-child(1)::before{
     position: absolute;
-    content: url(/img/ic_sharp-log-in.png);
+    content: url(img/ic_sharp-log-in.png);
     left: 0;
     top: 0;
 }
@@ -101,7 +104,7 @@ html, body{
 }
   
 .header_bottom{
-    width: 100%;
+     width: 100%;
     height: 80px;
     left: 0px;
     top: 0px;
@@ -164,7 +167,7 @@ html, body{
 }
 
 .top_info{
-    background:url(/img/fon1.png);
+    background:url( img/fon1.png);
     background-size: cover;
     width: 100%;
     background-position: center;
@@ -213,7 +216,7 @@ html, body{
     display: block;
     position: relative;
     height: 730px;
-    background: url(/img/fon2.png) 0 0 no-repeat;
+    background: url( img/fon2.png) 0 0 no-repeat;
     width: 100%;
     background-size: cover;
     max-width: 880px;
@@ -376,7 +379,7 @@ html, body{
     position: relative;
     height: 600px;
     width: 100%;
-    background: url("/img/fon3.png") 0 0 no-repeat;
+    background: url(img/fon3.png) 0 0 no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -592,7 +595,7 @@ html, body{
     min-height: 400px;
     left: 0px;
     top: 0px;
-    background: url(/img/fon\ end.png) 0 0 no-repeat;
+    background: url(img/fon\ end.png) 0 0 no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -783,6 +786,153 @@ html, body{
     padding-right: 30px;
 }
 
+@media (max-width:767px) {
+    .header__burger {
+        display: block ;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+        margin-right: 30px;
+    }
+    /*почему он захватывает обычное бургер меню?*/
+    .header__burger span{
+        background-color: #FFFFFF;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 0px;   
+        transition: all 0.3s ease 0s;
+        z-index: 3;
+    }
+    .header__burger :before, 
+    .header__burger :after{
+        content: "";
+        background-color: #FFFFFF;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0px;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+        z-index: 10;
+    }
+    .header__burger:before{
+        top: 0px;
+    }
+    .header__burger:after{
+        bottom: 0px;    
+    }
+    /*выше проблема мо спаном*/
 
+    .header_menu_list{
+        display: block;
+        padding-top: 175px;
+        position: fixed;
+        top: -150%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0F0F0F;
+        text-align:center ;
+        transition: all 0.3s ease 0s;
+        overflow:auto;
+    }
+    .header_menu_list li{
+        margin: 0px 0px 20px 0px;
+    }
+    .header_bottom ul {
+        display: block
+    }
+    .header_menu_list.active{
+        top: 0;
+    }
 
+    /*бургер меню(спан)*/
+    .header__burger.active:before{
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active:after{
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .header__burger.active span{
+        transform: scale(0)
+    }
+    /*выше спан*/
+
+    body.lock{
+        overflow: hidden;
+    }
+    .header_bottom__container a.hover:hover {
+        box-shadow: none;
+        background-color: inherit;
+    }
     
+    
+    
+    .header_top__container {
+      max-width: 320px;
+    }
+
+    .header_top{
+        display: block;
+    }
+    
+    .header_top__container{
+        display: block;
+        text-align: center;
+    }
+    
+    .header_top-left li {
+        border: none;
+        padding: 10px 0;
+    }
+    
+    .header_top-right li:nth-child(1){
+        padding: 10px 0;
+    }
+    
+    .header_top-left li:nth-child(1){
+      padding: 10px 0;
+    }
+
+    .header_top-left li:nth-child(1)::before {
+        padding: 10px 0;
+        margin-left: 90px;
+    }
+    
+    .header_top-right li:nth-child(1)::before {
+        padding: 10px 0;
+        margin-left: 90px;
+    }
+    
+    .header_top ul {
+        display: block;
+    }
+
+}
+/*cьезжают надписи (кривые тупа) !*/
+@media (max-width:767px){
+    .header_bottom-right li{
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    .header_bottom-right li:nth-child(4){
+        padding: 0;
+    }
+    .header_bottom-right li:nth-child(5){
+        padding: 0;
+    }
+    .header_bottom-right li:nth-child(3){
+        padding: 0;
+    }
+    .header_bottom-right li:nth-child(1){
+        padding: 0;
+    }
+    .header_bottom-right li:nth-child(2){
+        padding: 0;
+    }
+}
