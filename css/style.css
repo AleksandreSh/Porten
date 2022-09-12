@@ -49,7 +49,57 @@ html, body{
     justify-content: space-between;
     z-index: 10
 }
-  
+@media (min-width:767px) {
+.menu__p {
+    display: none;
+ }
+}
+/*----------*/
+.header_top__container-2{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    padding-right: 10px;
+}
+.header_top-left-2 li{
+    padding: 0 14px;
+}
+.header_top-left-2 li:last-child{
+    padding-right: 0;
+}
+.header_top-left-2 li:nth-child(1){
+    position: relative;
+    padding-left: 45px;
+}
+.header_top-left-2 li:nth-child(1)::before{
+    position:absolute;
+    content: url(/img/telephone.png);
+    top: 0;
+    padding-left : 0px;
+    left: 25px;
+}
+
+.header_top-right-2 li:last-child(1){
+    padding-right: 10px;
+}
+.header_top-right-2 li:nth-child(1){
+    position:relative;
+    padding-left: 25px;
+    padding-right: 30px;
+    left: 30px;
+}
+.header_top-right-2 li:nth-child(1)::before{
+    position: absolute;
+    content: url(/img/ic_sharp-log-in.png);
+    left: 10px;
+    top: 0;
+    padding-left: 0px;
+}
+/*----------*/
 .header_top-left li{
     padding: 0 14px;
 }
@@ -62,10 +112,10 @@ html, body{
     position: relative;
     padding-left: 61px;
 }
-      
+    /* content*/   
 .header_top-left li:nth-child(1)::before{
-    position: absolute;
-    content: url(/img/fon1.png);
+    position:absolute;
+    content: url(/img/telephone.png);
     top: 0;
     padding-left : 0px;
     left: 40px ;
@@ -87,7 +137,7 @@ html, body{
   
 .header_top-right li:nth-child(1)::before{
     position: absolute;
-    content: url(img/ic_sharp-log-in.png);
+    content: url(/img/ic_sharp-log-in.png);
     left: 0;
     top: 0;
 }
@@ -167,7 +217,7 @@ html, body{
 }
 
 .top_info{
-    background:url( img/fon1.png);
+    background:url(/img/fon1.png);
     background-size: cover;
     width: 100%;
     background-position: center;
@@ -206,18 +256,20 @@ html, body{
 }
   
 .goods__column_1{
-    display: block;
+    display: flex   ;
     position: relative;
     min-height: 730px;
     width: 100%;
 }
   
 .goods__column_2{
+    /*
     display: block;
     position: relative;
+    */
     height: 730px;
-    background: url( img/fon2.png) 0 0 no-repeat;
-    width: 100%;
+    background:no-repeat url( /img/fon2.png) left center;
+    width: 880px;
     background-size: cover;
     max-width: 880px;
 }
@@ -379,7 +431,7 @@ html, body{
     position: relative;
     height: 600px;
     width: 100%;
-    background: url(img/fon3.png) 0 0 no-repeat;
+    background: url(/img/fon3.png) 0 0 no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -595,7 +647,7 @@ html, body{
     min-height: 400px;
     left: 0px;
     top: 0px;
-    background: url(img/fon\ end.png) 0 0 no-repeat;
+    background: url(/img/fon\ end.png) 0 0 no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -786,6 +838,139 @@ html, body{
     padding-right: 30px;
 }
 
+@media (max-width: 767px) {
+    body.lock {
+        overflow: hidden;
+    }
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+    }
+    
+    .header__burger span {
+        position: absolute;
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger:before,
+    .header__burger:after {
+        position: absolute;
+        content: "";
+        background-color: #fff;
+        width: 100%;
+        height: 2px;
+        left: 0px;
+        transition: all 0.3s ease 0s;
+    }
+    .header__burger:before {
+        top: 0;
+    }
+    .header__burger:after {
+        bottom: 0;
+    }
+    .header__burger.active span {
+        transform: scale(0);
+    }
+
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+    .header__burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+    .menu__p {
+        display: flex;
+        padding-top: 25x;
+        justify-content: center;
+        font-family: PT Sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #969696;
+    }   
+    .header_menu_list {
+        position: fixed;
+        top: -150%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+       background-color: #0F0F0F;
+       padding-top: 175px;
+       text-align: center;
+       transition: all 0.3s ease 0s;
+       overflow: auto;
+    }
+    .body.lock{
+        overflow: hidden;
+    }
+    .header_menu_list.active{
+        top: 0;
+    }
+    .header_top ul, .header_bottom ul {
+        display: block;
+    }
+    
+    .header_bottom ul{
+        display: block;
+    }
+    .header_bottom-right li{
+        padding: 0;
+        margin-bottom: 50px;
+    
+    }
+    .header_bottom-right li:nth-child(4) {
+        padding: 0;
+    }
+    .header_bottom-right li:nth-child(5) {
+        padding: 0;
+    }
+    .header_bottom-right li:nth-child(3){
+        padding: 0;
+    }
+    .header_bottom-right li:nth-child(1), .header_bottom-right li:nth-child(2) {
+        padding: 0;
+    }
+}
+@media (max-width: 1920px) {
+    .header_top__container {
+        padding: 0 20% 0 20%;
+    }
+}
+@media (max-width: 1440px) {
+    .header_top__container {
+        padding: 0 10% 0 10%;
+    }
+}
+@media (min-width: 767px) and (max-width: 900px) {
+    .header_top__container {
+        padding: 0 5% 0 5%;
+    }
+}
+@media (max-width: 767px) {
+    .header_top__container{
+        display: none;
+    }
+    .header_top__container-2{
+        display: flex;
+    }
+}    
+@media (min-width: 767px) {
+    .header_top__container-2{
+        display: none;
+    }
+}
+
+      /*
 @media (max-width:767px) {
     .header__burger {
         display: block ;
@@ -795,14 +980,14 @@ html, body{
         z-index: 3;
         margin-right: 30px;
     }
-    /*почему он захватывает обычное бургер меню?*/
+    /*почему он захватывает обычное бургер меню?
     .header__burger span{
         background-color: #FFFFFF;
         position: absolute;
         width: 100%;
         height: 2px;
         left: 0;
-        top: 0px;   
+        top: 9px;   
         transition: all 0.3s ease 0s;
         z-index: 3;
     }
@@ -813,10 +998,7 @@ html, body{
         position: absolute;
         width: 100%;
         height: 2px;
-        left: 0px;
-        top: 9px;
-        transition: all 0.3s ease 0s;
-        z-index: 10;
+       
     }
     .header__burger:before{
         top: 0px;
@@ -824,7 +1006,6 @@ html, body{
     .header__burger:after{
         bottom: 0px;    
     }
-    /*выше проблема мо спаном*/
 
     .header_menu_list{
         display: block;
@@ -849,7 +1030,7 @@ html, body{
         top: 0;
     }
 
-    /*бургер меню(спан)*/
+    /*бургер меню(спан)
     .header__burger.active:before{
         transform: rotate(45deg);
         top: 9px;
@@ -861,7 +1042,6 @@ html, body{
     .header__burger.active span{
         transform: scale(0)
     }
-    /*выше спан*/
 
     body.lock{
         overflow: hidden;
@@ -894,9 +1074,9 @@ html, body{
     .header_top-right li:nth-child(1){
         padding: 10px 0;
     }
-    
+    /*спрятать можно
     .header_top-left li:nth-child(1){
-      padding: 10px 0;
+       padding: 10px 0;
     }
 
     .header_top-left li:nth-child(1)::before {
@@ -914,7 +1094,8 @@ html, body{
     }
 
 }
-/*cьезжают надписи (кривые тупа) !*/
+
+
 @media (max-width:767px){
     .header_bottom-right li{
         padding: 0;
