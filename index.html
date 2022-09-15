@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css\style.css"> 
     <title>Porten</title>
   </head>
@@ -64,48 +65,60 @@
       ullamcorper ultricies morbi ipsum sem metus pharetra, mi. Tortor nibh
       magna feugiat id nunc, dui nisl viverra.
       </div>
-    </div>
+    </div>  
     <div class="goods">
       <div class="goods__column_1">
         <div class="goods__column_1-title">
-          <h1>Сезон 2020/21</h1>
+          <p class="goods__column_1-text">СЕЗОН 2021/22</p>
+          <span class="goods__column_1-span"></span>
         </div>
-          <div class="watch">
-        <div class="watch_1__container">
-          <div class="watch_1">
-            <img src="img/62050 1(часы).png" alt="">
+          <div class="image-slider swiper-container">
+            <div class="image-slider__wrapper swiper-wrapper">
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__image">
+                  <img class="block1_img" src="img/62050 1(часы).png" alt="">
+                  <p class="block1-text1">
+                     Louis XVI ATHOS <br />
+                     <span class="text"
+                     >165 000 руб.</span>
+                    </p>
+                </div>
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__image">  
+                  <img src="img/62050 1(часы).png" alt="">
+                  <p class="block1-text1">
+                     Louis XVI ATHOS <br />
+                     <span class="text"
+                     >165 000 руб.</span>
+                    </p>
+                </div>
+              </div>
+              <div class="image-slider__slide swiper-slide">
+                <div class="image-slider__image">
+                  <img src="img/62050 1(часы).png" alt="">
+                  <p class="block1-text1">
+                     Louis XVI ATHOS <br />
+                     <span class="text"
+                     >165 000 руб.</span>
+                   </p>
+                </div>
+              </div>
+            </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
           </div>
-          <h5>Louis XVI ATHOS</h5>
-          <p>165 000 руб.</p>
-        </div>
-        <div class="watch_2__container">
-          <div class="watch_2">
-            <img src="img/62050 1(часы).png" alt="">
-          </div>
-          <h5>Louis XVI ATHOS</h5>
-          <p>165 000 руб.</p>
-        </div>
-          <div class="watch_3__container">
-          <div class="watch_3">
-            <img src="img/62050 1(часы).png" alt="">
-          </div>
-          <h5>Louis XVI ATHOS</h5>
-          <p>165 000 руб.</p>
-        </div>
       </div>
-        </div>
-        <div class="goods__column_2">
-          <div class="goods__column_2-title">
-            <h2>новая коллекция</h2>
-          </div>
-          <div class="center">
-            <form action="#">
-              <button><h3>Каталог</h3></button>
-            </form>
-          </div>
-        </div>
+      <div class="goods__column_2">
+        <p class="goods__column_2-text">Новая колекция</p>
+        <span class="goods__column_2-span"></span>
+        <button class="goods__column_2-button">
+          <a class="goods__column_2-link" href="">Каталог</a>
+        </button>
       </div>
-      <div class="collection">
+    </div>
+    <div class="collection">
         <div class="collection_1">
         </div>
         <div class="collection_2">
@@ -129,12 +142,12 @@
             </form>
           </div>
         </div>
-      </div>
-      <div class="new_goods">
-        <div class="new_goods-title">
+    </div>
+    <div class="new_goods">
+    <div class="new_goods-title">
           <h1>новые поступления</h1>
-        </div>
-        <div class="catalog">
+    </div>
+    <div class="catalog">
           <div class="catalog__container">
             <div class="catalog__item">
               <img src="img/62050 1(часы).png" alt="">
@@ -191,19 +204,20 @@
             <h5>Louis XVI ATHOS</h5>  
             <p>165 000 руб.</p>
           </div>
-        </div>
-        <footer>
-          <div class="footer_top">
-            <div class="footer_top-title">
+    </div>
+    <footer>
+      <div class="footer_top">
+        <div class="footer_top-title">
               <h1>наши бренды</h1>
-            </div>
-          <div class="brands">
+        </div>
+        <div class="brands">
             <img src="img/brand.png" alt="">
             <img src="img/brand.png" alt="">
             <img src="img/brand.png" alt="">
             <img src="img/brand.png" alt="">
-          </div>
-          <div class="footer_middle">
+        </div>
+      </div>
+      <div class="footer_middle">
             <div class="footer_middle__content">
               <div class="footer_middle__content__column_1">
                 <h2>О магазине</h2>
@@ -257,15 +271,16 @@
             </div>
         </div>
       </div>
-    </div>
-    <div class="footer_bot">
+      </div>
+      <div class="footer_bot">
       <div class="footer_bot_content">
         <p>© 2020 Все права защищены</p>
         <h5>Сделано Figma.info</h5>
       </div>
-    </div>
-  </footer>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src="js\script.js"></script>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js\script.js"></script>
   </body>
 </html> 
