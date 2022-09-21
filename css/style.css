@@ -273,7 +273,7 @@ min-width: 100%;
     background-color: #000;
     min-width: 0;
 }
-.goods__column_2    {
+.goods__column_2 img{
     width: 880px;
     height: 730px;
     background:no-repeat url( /img/fon2.png) left center;
@@ -407,6 +407,7 @@ min-width: 100%;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
+    z-index: 100;
 }
 .goods__column_2-span{
     width: 120px;
@@ -454,7 +455,7 @@ a {
         height: 730px;
         width: 100%;
     }
-    .goods__column_2 {
+    .goods__column_2 img{
         height: 730px;
         width: 100%;
     }
@@ -582,7 +583,7 @@ a {
 .collection_1{
     height: 600px;
     width: 963px;
-    background: url(/img/fon3.jpg) 0 0 no-repeat;
+    background: url(/img/mainpage__block3_sec1.jpg) 0 0 no-repeat;
     background-size: cover;
 }  
 .collection_2{
