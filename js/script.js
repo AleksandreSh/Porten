@@ -11,20 +11,55 @@ new Swiper('.image-slider', {
         prevEl: '.swiper-button-prev'
     },
     grabCursor: true, 
+    keyboard: {
+        enabled: true,
+        pageUpDown: true,
+    },
     mousewheel: {
         sensitivity: 1,
     },
     slidesPerView: 1,
+});
+
 /*
     effect: 'fade' ,
     fadeEffect: {
         crossFade: true
     },
-
+    slidesPerView: 4,
 dreakpoints:{
     1500:{
         slidesPerView: 1}
     },
 */
 
-});      
+    
+new Swiper('.image-slider2',{
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+    },
+    centeredSlides: true,
+    keyboard: {
+        enabled: true,
+        pageUpDown: true,
+    },
+    autoHeight: true,
+    mousewheel: {
+        sensitivity: 1,
+    },
+    breakpoints: {
+        401: {
+        slidesPerView: 1,
+        initialSlide: 0,
+        },
+        1024:{
+            slidesPerView: 3,
+            initialSlide: 1,
+        },
+        1440:{
+            slidesPerView: 4,
+            initialSlide: 1,
+        }
+    },
+});
