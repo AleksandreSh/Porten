@@ -583,8 +583,10 @@ a {
 .collection_1{
     height: 600px;
     width: 963px;
-    background: url(/img/mainpage__block3_sec1.jpg) 0 0 no-repeat;
+    /* background: url(/img/mainpage__block3_sec1.jpg) 0 0 no-repeat; */
+    background: url(img/mainpage__block3_sec1.jpg);
     background-size: cover;
+  z-index: 1000000;
 }  
 .collection_2{
     display: flex;
