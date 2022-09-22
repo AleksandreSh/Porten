@@ -13,7 +13,7 @@
     height: 100%;
     overflow: auto;
     background-color: #000;
-    min-width: 0;
+    min-width: 1;
 }
 
 html, body{
@@ -33,7 +33,7 @@ html, body{
     width: 100%;
     min-height: 44px;
     left: 0px;
-    top: 0px;
+    top: 5px;
     background-color: black;
     display: flex;
     font-family: PT Sans;
@@ -46,14 +46,12 @@ html, body{
   
 .header_top__container{
     width: 100%;
-
     max-width: 1300px;
-
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10
+    z-index: 10;
 }
 @media (min-width:767px) {
 .menu__p {
@@ -63,9 +61,7 @@ html, body{
 /*----------*/
 .header_top__container-2{
     width: 100%;
-
     max-width: 1300px;
-
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -82,10 +78,11 @@ html, body{
 .header_top-left-2 li:nth-child(1){
     position: relative;
     padding-left: 45px;
+    top: 3px;
 }
 .header_top-left-2 li:nth-child(1)::before{
     position:absolute;
-    content: url(/img/telephone.png);
+    content: url(D:/Porten/img/telephone.png);
     top: 0;
     padding-left : 0px;
     left: 25px;
@@ -99,10 +96,11 @@ html, body{
     padding-left: 25px;
     padding-right: 30px;
     left: 30px;
+    top: 2px;
 }
 .header_top-right-2 li:nth-child(1)::before{
     position: absolute;
-    content: url(/img/ic_sharp-log-in.png);
+    content: url(D:/Porten/img/ic_sharp-log-in.png);
     left: 10px;
     top: 0;
     padding-left: 0px;
@@ -123,7 +121,7 @@ html, body{
     /* content*/   
 .header_top-left li:nth-child(1)::before{
     position:absolute;
-    content: url(/img/telephone.png);
+    content: url(D:/Porten/img/telephone.png);
     top: 0;
     padding-left : 0px;
     left: 40px ;
@@ -145,7 +143,7 @@ html, body{
   
 .header_top-right li:nth-child(1)::before{
     position: absolute;
-    content: url(/img/ic_sharp-log-in.png);
+    content: url(D:/Porten/img/ic_sharp-log-in.png);
     left: 0;
     top: 0;
 }
@@ -225,8 +223,8 @@ html, body{
     padding-left: 30px;
 }
 
-.top_info{
-    background:url(img\fon1.png);
+.top_info {
+    background:url(D:/Porten/img/fon1.png);
     background-size: cover;
     width: 100%;
     background-position: center;
@@ -257,12 +255,7 @@ html, body{
     text-indent: -1px;
 }
 /*center*/
-/*
-margin: 0 auto;
-width: 100%;
-flex: 1 1 auto;
-min-width: 100%;
-(goods)*/
+
 .goods{
     display: flex;
     min-height: 730px;
@@ -273,10 +266,10 @@ min-width: 100%;
     background-color: #000;
     min-width: 0;
 }
-.goods__column_2 img{
+.goods__column_2 {
     width: 880px;
     height: 730px;
-    background:no-repeat url( /img/fon2.png) left center;
+    background:no-repeat url(D:/Porten/img/mainpage__block2_sec2.jpg) left center;
     background-size: cover;
     z-index: 2;
 }
@@ -307,46 +300,16 @@ min-width: 100%;
     margin: 0 auto;
 }
 
-/*swiper*
-.image-slider{
-    display: flex;
-    justify-content: space-around;
-    height: 325px;
-    align-items: center;
-}
-*/
-/*
-.swiper-wrapper{
-}
-*/
+
+
 .swiper{
+    display:flex;
     min-width: 0;
 }
 .image-slider2{
     min-width: 0;
 }
-@media (max-width: 700px) {
-   .swiper{
-    display: block;
-    min-width: 0;
-   }
-   .new_goods{
-    display: block;
-    min-width:min-content;
-   }
-   .goods{
-    display: block;
-    min-width: 0;
-   }
-   .wrapper{
-    min-width:0;
-    display: block;
-   }
-   .swiper  {
-    display: block;
-    min-width: 0;
-   }
-}
+
 .image-slider__image img{
     height: 265px;
     width: 260px;
@@ -407,7 +370,6 @@ min-width: 100%;
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
-    z-index: 100;
 }
 .goods__column_2-span{
     width: 120px;
@@ -455,7 +417,7 @@ a {
         height: 730px;
         width: 100%;
     }
-    .goods__column_2 img{
+    .goods__column_2 {
         height: 730px;
         width: 100%;
     }
@@ -583,10 +545,8 @@ a {
 .collection_1{
     height: 600px;
     width: 963px;
-    /* background: url(/img/mainpage__block3_sec1.jpg) 0 0 no-repeat; */
-    background: url(img/mainpage__block3_sec1.jpg);
+    background: url(D:/Porten/img/mainpage__block3_sec1.jpg);
     background-size: cover;
-  z-index: 1000000;
 }  
 .collection_2{
     display: flex;
@@ -792,7 +752,7 @@ a {
     min-height: 400px;
     left: 0px;
     top: 0px;
-    background: url(/img/fon\ end.png) 0 0 no-repeat;
+    background: url(D:/Porten/img/fon\ end.png) 0 0 no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
