@@ -57,9 +57,5 @@ new Swiper('.image-slider2',{
             slidesPerView: 3,
             initialSlide: 1,
         },
-        1440:{
-            slidesPerView: 4,
-            initialSlide: 1,
-        }
     },
 });
