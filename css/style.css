@@ -79,7 +79,7 @@ html, body{
 }
 .header_top-left-2 li:nth-child(1)::before{
     position:absolute;
-    content: url(/img/telephone.png);
+    content: url(../img/telephone.png);
     top: 0;
     padding-left : 0px;
     left: 25px;
@@ -97,7 +97,7 @@ html, body{
 }
 .header_top-right-2 li:nth-child(1)::before{
     position: absolute;
-    content: url(/img/ic_sharp-log-in.png);
+    content: url(../img/ic_sharp-log-in.png);
     left: 10px;
     top: 0;
     padding-left: 0px;
@@ -116,7 +116,7 @@ html, body{
     /* content*/   
 .header_top-left li:nth-child(1)::before{
     position:absolute;
-    content: url(/img/telephone.png);
+    content: url(../img/telephone.png);
     top: 0;
     padding-left : 0px;
     left: 40px ;
@@ -135,7 +135,7 @@ html, body{
 } 
 .header_top-right li:nth-child(1)::before{
     position: absolute;
-    content: url(/img/ic_sharp-log-in.png);
+    content: url(../img/ic_sharp-log-in.png);
     left: 0;
     top: 0;
 }
@@ -203,7 +203,7 @@ html, body{
 }
 /*-----------*/
 .top_info {
-    background:url(/img/fon1.png);
+    background:url(../img/fon1.png);
     background-size: cover;
     width: 100%;
     max-width: 2000px;
@@ -248,7 +248,7 @@ html, body{
 .goods__column_2 {
     width: 880px;
     height: 730px;
-    background:no-repeat url(/img/mainpage__block2_sec2.jpg) left center;
+    background:no-repeat url(../img/mainpage__block2_sec2.jpg) left center;
     background-size: cover;
 }
 .goods__column_1-title{
@@ -529,7 +529,7 @@ a {
 .collection_1{
     height: 600px;
     width: 963px;
-    background: url(/img/mainpage__block3_sec1.jpg);
+    background: url(../img/mainpage__block3_sec1.jpg);
     background-size: cover;
 }  
 .collection_2{
@@ -850,7 +850,7 @@ a {
     min-height: 400px;
     left: 0px;
     top: 0px;
-    background: url(/img/fon-end.png) 0 0 no-repeat;
+    background: url(../img/fon-end.png) 0 0 no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
