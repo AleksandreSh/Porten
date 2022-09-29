@@ -21,17 +21,6 @@ new Swiper('.image-slider', {
     slidesPerView: 1,
 });
 
-/*
-    effect: 'fade' ,
-    fadeEffect: {
-        crossFade: true
-    },
-    slidesPerView: 4,
-dreakpoints:{
-    1500:{
-        slidesPerView: 1}
-    },
-*/
 
     
 new Swiper('.image-slider2',{
