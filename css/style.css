@@ -387,6 +387,17 @@ a {
         display: none;
     }
 }
+@media (min-width:1500px){
+    .goods__column_2{
+        width: 959px;
+    }
+    .new_goods__header{
+        padding-top: 60px;
+    }
+    .collection_2{
+        width: 979px;
+    }
+}
 @media (max-width: 1024px) {
     .goods {
         display: block;
@@ -406,7 +417,7 @@ a {
         padding-bottom: 35px;
     }
     .goods__column_1{
-        height: 580px;
+        height: 655px;
     }
     .goods__column_2{
         height: 500px;
@@ -509,7 +520,7 @@ a {
 /*--------*/
 .collection{
     display: flex;
-    min-height: 600px;
+    min-height: 720px;
     max-width: 2000px;
     margin: 0 auto;
 }  
@@ -528,15 +539,15 @@ a {
 }  
 .collection_1{
     height: 600px;
-    width: 963px;
-    background: url(../img/mainpage__block3_sec1.jpg);
+    width: 982px;
+    background: url(../img/mainpage__block3_sec1.jpg) center;
     background-size: cover;
 }  
 .collection_2{
     display: flex;
     flex-direction: column;
-    width: 957px;
-    height: 600px;
+    width: 950px;
+    height: 630px;
     background: #000;
 }  
 .collection_2-text{
@@ -562,7 +573,7 @@ a {
 .collection_2-button{
     margin: 0 auto;
     width: 300px;
-    height: 50px;
+    height: 45px;
     background-color: rgba(0, 0, 0, 0);
     border: 1px solid #ffffff;
 } 
@@ -602,7 +613,7 @@ a {
 }
 @media (max-width: 900px) {
     .collection_2{
-        height: 500px;
+        height: 495px;
         width: 100%;
     }
     .collection_2-title{
@@ -660,7 +671,7 @@ a {
 }
 .new_goods{
     background: black;
-    height: 1289px;
+    height: 1100px;
 } 
 .new_goods__header{     
     display: flex;
@@ -669,7 +680,7 @@ a {
 .new_goods-span{
     display: flex;
     flex-direction: row;
-    margin: 20px auto 0 auto;
+    margin: 33px auto 0 auto;
     width: 120px;
     border: 1px solid white;
 }
@@ -747,7 +758,7 @@ a {
         padding-top: 50px;
     }
     .new_goods{
-        height: 1000px;
+        height: 1021px;
     }
     .block2__items{
         padding-top: 50px;
@@ -762,7 +773,7 @@ a {
     }
     .image-slider_image2 {
         margin: 0;
-        padding-top: 50px;
+        padding-top: 45px;
     }
     .new_goods{
         height: 600px;
@@ -780,7 +791,7 @@ a {
 }
 @media (max-width: 500px) {
     .new_goods{
-        height: 550px;
+        height: 620px;
     }
     .new_goods-title{
         font-size: 28px;
@@ -789,7 +800,7 @@ a {
 }
 @media (max-width: 400px) {
     .new_goods{
-        height: 550px;
+        height: 570px;
     }
     .new_goods-title{
         font-size: 26px;
